@@ -1,0 +1,20 @@
+:root, [data-bs-theme="light"] {
+    --bs-primary: rgb(206, 211, 209);
+    --bs-secondary: rgb(0, 0, 0);
+    --bs-success: #20c997;       
+    --bs-info: #0dcaf0;          
+    --bs-warning: #ffc107;       
+    --bs-danger: #dc3545;        
+    --bs-light: #f8f9fa;    
+    --bs-dark: #212529;
+    --bs-body-bg: rgb(206, 211, 209);
+    --bs-body-color: rgb(238, 239, 239);
+    --bs-navbar-color: black;
+}
+
+.form-control {
+    background-color: black;
+}
+.form-control::placeholder {
+    color: lightgray;
+}
