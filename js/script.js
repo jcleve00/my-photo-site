@@ -1,5 +1,3 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const landingPhoto = document.getElementById('landing-photo');
-    landingPhoto.style.opacity = 0;
-    
-});
+// Initialize the tooltip
+const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))

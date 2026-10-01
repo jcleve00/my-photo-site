@@ -7,32 +7,160 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
   </head>
-  <body>
+  <body class="min-vh-100 d-flex flex-column">
     <nav class="navbar navbar-expand-sm bs-primary mt-3 border-top border-bottom border-dark" aria-label="Horizontal nav bar">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">Josh Cleveland</a>
+            <a class="navbar-brand ms-3" href="about.html" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="About Me">Josh Cleveland</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarsExample03">
-                <ul class="navbar-nav ms-auto mb-2 mb-sm-0">
+                <ul class="navbar-nav ms-auto mb-2 mb-sm-0 me-sm-4">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        <a class="nav-link"  href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="gallery.html">Gallery</a>
+                        <a class="nav-link active" aria-current="page" href="gallery.html">Gallery</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                        <a class="nav-link" href="about.html">About</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
     <main>
-    
+        <div id="img-modal" class="modal fade" tabindex="-1">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-black">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img class="img-fluid border border-black rounded p-1" style="box-shadow: 0px 0px 10px black;">
+                    </div>
+                    <div class="modal-footer border-black">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row row-cols-4 m-2">
+            <div class="col" data-bs-toggle="modal" data-bs-target="#img-modal">
+                <img src="assets/thumbnails/2013-10-01 23.36.01.jpg" class="img-thumbnail"  alt="Dew drops on pink and green leaf">
+            </div>
+            <div class="col" data-bs-toggle="modal" data-bs-target="#img-modal">
+                <img src="assets/thumbnails/3FlowerNowpurpwhtedges.jpg" class="img-thumbnail" alt="Glowing flowers against black background">
+            </div>
+            <div class="col" data-bs-toggle="modal" data-bs-target="#img-modal">
+                <img src="assets/thumbnails/April2May0011.jpg" class="img-thumbnail" alt="Pink and purple hued sunset">
+            </div>
+            <div class="col" data-bs-toggle="modal" data-bs-target="#img-modal">
+                <img src="assets/thumbnails/close-upTtownII.jpg" class="img-thumbnail" alt="Downtown Tulsa with a sketched effect">
+            </div>
+            <div class="col" data-bs-toggle="modal" data-bs-target="#img-modal">
+                <img src="assets/thumbnails/DarkSunset.jpg" class="img-thumbnail" alt="Digital painting of turbulent, ominous sunset">
+            </div>
+            <div class="col" data-bs-toggle="modal" data-bs-target="#img-modal">
+                <img src="assets/thumbnails/DPP_3115.jpg" class="img-thumbnail" alt="Foggy Tulsa cemetery">
+            </div>
+            <div class="col" data-bs-toggle="modal" data-bs-target="#img-modal">
+                <img src="assets/thumbnails/dragonfly2purp.jpg" class="img-thumbnail" alt="Dragonfly on a branch">
+            </div>
+            <div class="col" data-bs-toggle="modal" data-bs-target="#img-modal">
+                <img src="assets/thumbnails/DSC_2554.jpg" class="img-thumbnail" alt="Black white lily with scant glowing dew drops">
+            </div>
+            <div class="col" data-bs-toggle="modal" data-bs-target="#img-modal">
+                <img src="assets/thumbnails/DSC_2555.jpg" class="img-thumbnail" alt="Black white lily with lots of glowing dew drops">
+            </div>
+            <div class="col" data-bs-toggle="modal" data-bs-target="#img-modal">
+                <img src="assets/thumbnails/Glow_OuttaTheDarkRedish-2.jpg" class="img-thumbnail" alt="Portrait of woman with glowing paint">
+            </div>
+            <div class="col" data-bs-toggle="modal" data-bs-target="#img-modal">
+                <img src="assets/thumbnails/IMG_0076.jpg" class="img-thumbnail" alt="Spider inside flower">
+            </div>
+            <div class="col" data-bs-toggle="modal" data-bs-target="#img-modal">
+                <img src="assets/thumbnails/IMG_2371.jpg" class="img-thumbnail" alt="Girl putting handprint on wall">
+            </div>
+            <div class="col" data-bs-toggle="modal" data-bs-target="#img-modal">
+                <img src="assets/thumbnails/kasey2.jpg" class="img-thumbnail" alt="Black & white portrait of woman illuminated by fire">
+            </div>
+            <div class="col" data-bs-toggle="modal" data-bs-target="#img-modal">
+                <img src="assets/thumbnails/lonewalker1.jpg" class="img-thumbnail" alt="Man walking down path alone">
+            </div>
+            <div class="col" data-bs-toggle="modal" data-bs-target="#img-modal">
+                <img src="assets/thumbnails/me&D1.jpg" class="img-thumbnail" alt="Glowing red portrait of woman lying down">
+            </div>
+            <div class="col" data-bs-toggle="modal" data-bs-target="#img-modal">
+                <img src="assets/thumbnails/nessa&thekids-1.jpg" class="img-thumbnail" alt="Woman and kids sitting on dock">
+            </div>
+            <div class="col" data-bs-toggle="modal" data-bs-target="#img-modal">
+                <img src="assets/thumbnails/NewPix0121.jpg" class="img-thumbnail" alt="Insect on flower">
+            </div>
+            <div class="col" data-bs-toggle="modal" data-bs-target="#img-modal">
+                <img src="assets/thumbnails/OrangeDiffuseRose.jpg" class="img-thumbnail" alt="Orange rose">
+            </div>
+            <div class="col" data-bs-toggle="modal" data-bs-target="#img-modal">
+                <img src="assets/thumbnails/PanoramicTtown.jpg" class="img-thumbnail" alt="Tulsa citscape at night">
+            </div>
+            <div class="col" data-bs-toggle="modal" data-bs-target="#img-modal">
+                <img src="assets/thumbnails/PED.BRIDGE.jpg" class="img-thumbnail" alt="Old Tulsa pedestrian bridge in the fog">
+            </div>
+            <div class="col" data-bs-toggle="modal" data-bs-target="#img-modal">
+                <img src="assets/thumbnails/Portfolio0022.jpg" class="img-thumbnail" alt="Girl standing on the edge of a dock">
+            </div>
+            <div class="col" data-bs-toggle="modal" data-bs-target="#img-modal">
+                <img src="assets/thumbnails/Portfolio0066.jpg" class="img-thumbnail" alt="Railway tracks leading to moon like face">
+            </div>
+            <div class="col" data-bs-toggle="modal" data-bs-target="#img-modal">
+                <img src="assets/thumbnails/Project2new-2.jpg" class="img-thumbnail" alt="Otherwordly blue landscape">
+            </div>
+            <div class="col" data-bs-toggle="modal" data-bs-target="#img-modal">
+                <img src="assets/thumbnails/RosyReflection.jpg" class="img-thumbnail" alt="Roses reflected in a puddle">
+            </div>
+            <div class="col" data-bs-toggle="modal" data-bs-target="#img-modal">
+                <img src="assets/thumbnails/SandraFlower.jpg" class="img-thumbnail" alt="Pink and orange flower">
+            </div>
+            <div class="col" data-bs-toggle="modal" data-bs-target="#img-modal">
+                <img src="assets/thumbnails/sepiacurvytree004.jpg" class="img-thumbnail" alt="Trees with trunks shaped by the wind">
+            </div>
+            <div class="col" data-bs-toggle="modal" data-bs-target="#img-modal">
+                <img src="assets/thumbnails/shinedowntree-2.jpg" class="img-thumbnail" alt="Light shining down into the forest floor">
+            </div>
+            <div class="col" data-bs-toggle="modal" data-bs-target="#img-modal">
+                <img src="assets/thumbnails/shutter0002.jpg" class="img-thumbnail" alt="A girl and baby from above">
+            </div>
+            <div class="col" data-bs-toggle="modal" data-bs-target="#img-modal">
+                <img src="assets/thumbnails/tigerpink.jpg" class="img-thumbnail" alt="Face of a tiger styled pink and orange">
+            </div>
+            <div class="col" data-bs-toggle="modal" data-bs-target="#img-modal">
+                <img src="assets/thumbnails/WALLTREESHADOW-2.jpg" class="img-thumbnail" alt="Wall divided into three parts by the shadow">
+            </div>
+            <div class="col" data-bs-toggle="modal" data-bs-target="#img-modal">
+                <img src="assets/thumbnails/wineshotIII.jpg" class="img-thumbnail" alt="Wine glasses stacked on top each other">
+            </div>
+            <div class="col" data-bs-toggle="modal" data-bs-target="#img-modal">
+                <img src="assets/thumbnails/DSC_0428.jpg" class="img-thumbnail" alt="Girl hodling a mirrored reflection of herself">
+            </div>
+        </div>
+        <div class="toast-container position-fixed bottom-0 end-0 p-3">
+            <div id="purchaseToast" class="toast" role="alert" data-bs-autohide="false" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header">
+                    <strong class="me-auto">Josh Cleveland</strong>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div class="toast-body">
+                    Hello, internet traveller! Would you like more info about how to purchase a print?
+                    Shoot me an email!
+                    <div class="mt-2 pt-2 border-top">
+                        <button type="button" class="btn btn-primary btn-sm">Email Me</button>
+                        <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="toast">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
-    <footer class="container-fluid row m-0 mt-2 pt-3 px-3" style="background-color: black;">
+    <footer class="container-fluid row m-0 mt-2 pt-3 px-3 justify-content-between" style="background-color: black;">
         <div class="col-12 col-sm-6">
             <h3 class="text-center">Contact</h3>
             <p>Feel free to reach out with any questions!</p>
@@ -42,7 +170,7 @@
                 jcleve00@icloud.com
             </address>             
         </div>
-        <div class="col-12 col-sm-6 col-md-3">
+        <div class="col-12 col-sm-6">
             <form>
                 <div class="mb-3">
                     <input type="text" class="form-control border-0 border-bottom rounded-0" id="name" placeholder="Your name *">
@@ -59,7 +187,8 @@
             </form>
         </div>
     </footer>
-    
+    <script src="js/script.js" defer></script>
+    <script src="js/gallery.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
   </body>
 </html>

@@ -1,4 +1,4 @@
-:root, [data-bs-theme="light"] {
+:root { 
     --bs-primary: rgb(206, 211, 209);
     --bs-secondary: rgb(0, 0, 0);
     --bs-success: #20c997;       
@@ -17,6 +17,9 @@
     --bs-body-font-size: 1rem;
     --bs-body-font-weight: 300;
     --bs-body-line-height: 1.5;
+    --bs-primary-bg-subtle: rgb(168, 168, 168);
+    --bs-primary-text-emphasis: rgb(5, 5, 5);
+    
 }
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;500;600;700&display=swap");
 body {
@@ -31,12 +34,50 @@ body {
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
+/* Landing page */
 .fade.fade-slow {
   transition: opacity 2s ease-in-out;
 }
+.carousel-fade, .carousel-item {
+    transition: opacity 3s ease-in-out !important;
+}
+/* Form styles */
 .form-control {
     background-color: black;
 }
 .form-control::placeholder {
     color: lightgray;
+}
+.form-control:focus-visible {
+    background-color: var(--bs-secondary);
+    outline: 2px solid white;
+    outline-offset: 2px;
+}
+/* Gallery page */
+.img-thumbnail {
+    width: 100%; 
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border: 1px solid black;
+    box-shadow: 0 0 5px black;
+    margin-bottom: 4px;
+}
+.toast {
+    --bs-toast-color: black;
+}
+.btn-primary {
+    --bs-btn-bg: black;
+    --bs-btn-border-color: grey;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: grey;
+    --bs-btn-hover-border-color: black;
+}
+
+/* About page */
+.accordion {
+    --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgb(98, 97, 97);
+}
+.accordion-item, .accordion-header, .accordion-body, .accordion-button {
+    color: black;
+    border-color: black;
 }
