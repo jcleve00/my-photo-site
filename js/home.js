@@ -1,7 +1,8 @@
 
-// Set opacity transition for landing page photos when page loads
+// Set opacity transition for landing page photo when page loads
 const landingPhoto = document.querySelector('.landing-photo');
-
+// Function calls requestAnimationFrame to make sure the image has been drawn
+// with opacity at 0 before adding the loaded class to trigger the CSS change
 function fadeIn() {
     requestAnimationFrame(() => {
         requestAnimationFrame(() => {
@@ -9,10 +10,13 @@ function fadeIn() {
         });
     });
 }
+
 if (landingPhoto) {
+    // If the landing photo has completed loading call fadeIn()
     if (landingPhoto.complete && landingPhoto.naturalWidth > 0) {
         fadeIn();
     } else {
+        // Else if has not already loaded, listen for it loading then call fade in
         landingPhoto.addEventListener('load', fadeIn);
     }
 }

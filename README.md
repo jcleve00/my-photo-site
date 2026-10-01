@@ -1,6 +1,6 @@
 # my-photo-site
 ## Custom CSS
-- For the landing page image I wrote my own fade-in effect that sets the opacity transition in javascript. Bootstrap has a fade effect for some things, but I couldn't get it to behave how I wanted.
+- For the landing page image I wrote my own fade-in effect that sets the opacity transition in javascript. Bootstrap has a fade effect for some things, but I couldn't get it to behave how I wanted. **Edit**: After hosting my site on github I realized my image fade in only worked the first time the page loaded. I discovered that the browser was likely caching the image so it wasn't getting enough time to run the fade in logic. So I had to reorganize and rewrite that code moving the opacity and transition into CSS and writing a fadeIn function.
 - I set the carousel fade  in CSS to give it more time to fade in and out as it cycled through the images.
 - I adjusted the form styles in CSS because the form would be repeated on all pages. 
 - I styled the thumbnails in CSS for the same reason. There's 32 of them and that would be a lot of unnecessarily repeated code.
