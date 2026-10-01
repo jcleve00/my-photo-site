@@ -1,10 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
     // Set opacity transition for landing page photos when page loads
-    const landingPhotos = document.querySelectorAll('.landing-photo');
-    landingPhotos.forEach((photo) => {
-        photo.style.opacity = "1";
-        photo.style.transition = "opacity 2s ease-in";
-    });
+    const landingPhoto = document.querySelector('.landing-photo');
+    
+    landingPhoto.style.opacity = "1";
+    landingPhoto.style.transition = "opacity 2s ease-in";
     
     // Change the size of image container when smaller than desktop
     const topImageContainer = document.getElementById('top-image-container');

@@ -34,10 +34,7 @@ body {
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
-/* Landing page */
-.fade.fade-slow {
-  transition: opacity 2s ease-in-out;
-}
+/* Home Page */
 .carousel-fade, .carousel-item {
     transition: opacity 3s ease-in-out !important;
 }
